@@ -1,0 +1,69 @@
+1) For(IN,OF,EACH) loop
+const countryObj = {
+    India: "IND",
+    China: "CHN",
+    UnitedStated: "US",
+    unitedKingdom: "UK",
+    Europe: "EUR",
+    Germany: "GERMANY"}
+    
+
+    //for 
+const objectValues = Object.values(countryObj);
+log(objectValues);
+
+for (let i = 0; i < objectValues.length; i++) {
+  log(objectValues[i]);
+}
+
+const objectkeys = Object.keys(countryObj);
+log(objectkeys);
+for (let i = 0; i < objectkeys.length; i++) {
+  log(objectkeys[i]);
+}
+
+//For each
+objectkeys.forEach((value) => {
+    log(`
+     Object Keys : ${value} 
+     Object Value : ${countryObj[value]}
+   `);
+  });
+
+  //For in
+  for (key in countryObj) {
+    log(
+      ` 
+  Keys : ${key}
+  Values : ${countryObj[key]}
+  `
+    );
+  }
+  
+//For of
+  for (objVal of objectkeys) {
+    log(`
+    object keys : ${objVal}
+    object values : ${countryObj[objVal]}
+    '`);
+  }
+
+
+
+
+2)Create your own resume in JSON format.
+{
+  "name": "Saran",
+  "contact": {
+    "email": "saransj8@gmail.com",
+    "phone": "+918838038730",
+    "address": "90-B, block-6, Neyveli-3"
+  },
+  "summary": "Experienced software engineer with a passion for creating innovative solutions. Strong problem-solving skills.",
+  "education":
+    {
+      "degree": "Bachelor of technology in EEE",
+      "school": "VIT",
+      "passingYear": "2023"
+    },
+}
